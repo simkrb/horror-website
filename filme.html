@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Sprache der Webseite ist Deutsch -->
+<head>
+  <meta charset="UTF-8">  
+  <title>Filme</title> <!-- Titel der Seite im Browser-Tab -->
+  <!-- Google Font Creepster einbinden -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+  <style>   /* === Grundstil für die Seite === */
+body {
+  background: linear-gradient(135deg, #330000, #000000 70%); /* dunkler Farbverlauf als Hintergrund */
+  color: #f0f0f0; /* Schriftfarbe hellgrau */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* moderne serifenlose Schrift */
+  margin: 0; /* kein Standard-Außenabstand */
+  padding: 0 20px; /* horizontaler Innenabstand */
+  line-height: 1.7; /* Zeilenhöhe für bessere Lesbarkeit */
+  min-height: 100vh; /* mindestens volle Bildschirmhöhe */
+  font-size: 1.1rem; /* Standard-Schriftgröße */
+  text-shadow: 0 0 3px #4b0000; /* leicht roter Schattentexteffekt */
+}
+
+/* === Header-Bereich mit Akzenten === */
+header {
+  background-color: rgba(0, 0, 0, 0.85); /* halbtransparenter schwarzer Hintergrund */
+  padding: 25px 0; /* vertikaler Innenabstand */
+  text-align: center; /* zentrierter Text */
+  border-bottom: 4px solid #b22222; /* untere rote Linie als Akzent */
+  box-shadow: 0 0 12px #4b0000; /* roter Schimmer-Effekt */
+}
+
+header h1 {
+  font-family: 'Creepster', cursive; /* Grusel-Schriftart */
+  font-size: 3rem; /* große Überschrift */
+  color: #b22222; /* dunkles Rot */
+  margin: 0; /* kein Außenabstand */
+  letter-spacing: 3px; /* Buchstabenabstand */
+  text-shadow: 2px 2px 6px #4b0000; /* tieferer Schattentext */
+}
+
+/* === Navigation oben === */
+nav {
+  margin-top: 12px; /* Abstand oberhalb der Links */
+}
+
+nav a {
+  color: #f0f0f0; /* helle Links */
+  text-decoration: none; /* keine Unterstreichung */
+  margin: 0 14px; /* horizontaler Abstand zwischen Links */
+  font-weight: 600; /* halbfett */
+  font-size: 1.2rem; /* etwas größere Schrift */
+  text-shadow: 0 0 4px #4b0000; /* leicht leuchtender Text */
+  transition: color 0.3s ease; /* weicher Farbwechsel beim Hover */
+}
+
+nav a:hover {
+  color: #ff4c4c; /* helle rote Farbe beim Überfahren */
+  text-shadow: 0 0 12px #ff4c4c; /* starker Leuchteffekt */
+}
+
+nav a[aria-current="page"], nav a.current {
+  color: #b22222; /* markierter Link dunkler Rotton */
+  text-shadow: 0 0 12px #b22222; /* starker Schatteneffekt */
+  cursor: default; /* kein Zeiger bei aktivem Link */
+}
+
+/* === Hauptinhalt === */
+main {
+  max-width: 900px; /* maximale Breite */
+  margin: 40px auto 60px; /* zentriert mit vertikalem Abstand */
+  background-color: rgba(0, 0, 0, 0.8); /* leicht transparenter Hintergrund */
+  padding: 30px 25px; /* Innenabstand */
+  border-radius: 12px; /* abgerundete Ecken */
+  box-shadow: 0 0 15px #4b0000; /* roter Schatten */
+}
+
+/* === Überschriften im Inhalt === */
+h2 {
+  font-family: 'Creepster', cursive; /* gleiche Grusel-Schrift */
+  color: #b22222; /* dunkles Rot */
+  font-size: 2.2rem;
+  border-bottom: 3px solid #b22222; /* Unterstreichung */
+  padding-bottom: 8px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 6px #4b0000;
+}
+
+h3 {
+  font-family: 'Creepster', cursive;
+  color: #b22222;
+  font-size: 2.2rem;
+  border-bottom: 3px solid #b22222;
+  padding-bottom: 8px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 6px #4b0000;
+}
+
+/* === Fließtext === */
+p {
+  font-size: 1.15rem;
+  margin-bottom: 20px; /* Abstand unter jedem Absatz */
+  text-shadow: 0 0 4px #330000; /* dezenter Textschatten */
+  line-height: 1.8; /* angenehme Lesbarkeit */
+}
+
+/* === Listenstil === */
+ul {
+  list-style-type: square; /* viereckige Aufzählungszeichen */
+  padding-left: 20px;
+  color: #f08080; /* helles Rosa-Rot */
+  font-size: 1.15rem;
+  text-shadow: 0 0 3px #4b0000;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin-bottom: 8px; /* Abstand zwischen Listenpunkten */
+}
+
+/* === Footer (unten auf der Seite) === */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid #b22222; /* rote Linie oben */
+  color: #999; /* grauer Text */
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 40px;
+  text-shadow: 0 0 4px #330000;
+  background-color: rgba(0, 0, 0, 0.85); /* dunkler Hintergrund */
+  box-shadow: 0 0 10px #4b0000 inset; /* roter Schein nach innen */
+}
+
+/* === Responsives Design für Tablets === */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px; /* weniger horizontaler Platz */
+    font-size: 1rem; /* kleinere Schrift */
+  }
+
+  main {
+    margin: 20px auto 40px;
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  h2, h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* === Responsives Design für Smartphones === */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  nav {
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+
+  nav a {
+    margin: 0 6px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    max-width: 100%;
+    margin: 15px auto 30px;
+    padding: 15px 10px;
+  }
+
+  ul {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Kopfbereich mit Seitentitel und Navigation -->
+  <header>
+    <h1>Filme</h1> <!-- Hauptüberschrift (gleich auf allen Seiten) -->
+
+    <!-- Navigationsleiste mit Links zu allen Seiten -->
+    <nav>
+      
+      <a href="index.html">Start</a> |
+ <a href="ueber.html">Über Horror</a> |
+<a href="horror.html">Historische Urban Legends</a> |  
+      <a href="filme.html">Filme</a>
+    </nav>
+  </header>
+<main>
+  <section>
+    <h3>Welche Horrorfilme sind die beliebtesten?</h3>
+    <ul>
+      <li>1920: The Cabinet of Dr. Caligari (Deutschland)</li>
+      <li>1931: Dracula (USA)</li>
+      <li>1931: Frankenstein (USA)</li>
+      <li>1932: Freaks (USA)</li>
+      <li>1935: The Bride of Frankenstein (USA)</li>
+      <li>1942: Cat People (USA)</li>
+      <li>1960: Psycho (USA)</li>
+      <li>1973: The Exorcist (USA)</li>
+      <li>1974: The Texas Chain Saw Massacre (USA)</li>
+      <li>1978: Halloween (USA)</li>
+      <li>1980: The Shining (USA)</li>
+      <li>1984: A Nightmare on Elm Street (USA)</li>
+      <li>1996: Scream (USA)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Was sind die brutalsten Horrorfilme seit 2000?</h2>
+    <ul>
+      <li>Terrifier (2016)</li>
+      <li>Hostel (2005)</li>
+      <li>Saw (2004)</li>
+      <li>The Devil’s Rejects (2005)</li>
+      <li>The Human Centipede (2009)</li>
+      <li>Inside (2007)</li>
+      <li>Raw (2016)</li>
+    </ul>
+  </section>
+<h2>Warum schauen Menschen Horrorfilme?</h2>
+
+<p>Horrorfilme ziehen uns magisch an – trotz (oder gerade wegen) ihrer düsteren und unheimlichen Geschichten. Viele suchen den Nervenkitzel, den Adrenalinkick, den nur das Unbekannte und das Gruselige erzeugen können. Es ist eine Art sichere Angst: Man erlebt Horror aus sicherer Entfernung, spürt die Spannung und den Schrecken, ohne selbst in Gefahr zu sein.</p>
+
+<p>Außerdem ermöglichen Horrorfilme es uns, tiefsitzende Ängste zu erforschen und zu verarbeiten. Sie spiegeln gesellschaftliche Sorgen und Tabus wider und schaffen einen Raum, in dem wir das Dunkle und Unheimliche erleben können, ohne wirklich bedroht zu sein.</p>
+
+<p>Für manche ist es auch einfach ein Gemeinschaftserlebnis: Zusammen zu zittern, zu lachen und sich zu gruseln verbindet Menschen auf besondere Weise.</p>
+</main>
+<footer><!-- fußzeile -->
+  <p> von Sümeyye Körbulak | 2025 Horrorfilme</p>
+</footer>
+</body>
+</html>

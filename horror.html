@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Historische Urban Legends</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #330000, #000000 70%);
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      line-height: 1.7;
+      min-height: 100vh;
+      font-size: 1.1rem;
+      text-shadow: 0 0 3px #4b0000;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 25px 0;
+      text-align: center;
+      border-bottom: 4px solid #b22222;
+      box-shadow: 0 0 12px #4b0000;
+    }
+
+    /* Verbesserte einheitliche Überschriften */
+    h1, h2, h3 {
+      font-family: 'Creepster', cursive;
+      color: #b22222;
+      text-shadow: 2px 2px 6px #4b0000;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #d65c5c;
+      text-shadow: 1px 1px 3px #4b0000;
+    }
+
+    img {
+      width: 350px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #b22222;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-shadow: 0 0 4px #4b0000;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff4c4c;
+      text-shadow: 0 0 12px #ff4c4c;
+    }
+
+    nav a[aria-current="page"],
+    nav a.current {
+      color: #b22222;
+      text-shadow: 0 0 12px #b22222;
+      cursor: default;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto 60px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #4b0000;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 4px #330000;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+      color: #f08080;
+      font-size: 1.15rem;
+      text-shadow: 0 0 3px #4b0000;
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    figure {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #f08080;
+      margin-top: 8px;
+      text-shadow: 0 0 3px #4b0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 3px solid #b22222;
+      color: #999;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 40px;
+      text-shadow: 0 0 4px #330000;
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 10px #4b0000 inset;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+      }
+
+      main {
+        max-width: 100%;
+        margin: 30px 10px 50px;
+        padding: 25px 15px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+      }
+
+      p, ul {
+        font-size: 1rem;
+      }
+
+      img {
+        width: 90%;
+        max-width: 320px;
+        margin: 20px auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+        margin: 0 6px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p, ul {
+        font-size: 0.95rem;
+      }
+
+      img {
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Historische Urban Legends</h1>
+    <nav>
+      <a href="index.html">Start</a> |
+      <a href="ueber.html">Über Horror</a> |
+      <a href="horror.html" aria-current="page">Historische Urban Legends</a> |
+      <a href="filme.html">Filme</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ikonische urbane Legenden der Geschichte</h2>
+
+    <p>Im Laufe der Geschichte haben sich viele düstere Geschichten verbreitet, die oft auf wahren Begebenheiten basieren – sogenannte "Urban Legends". Diese modernen Sagen spiegeln Ängste, Tabus und kulturelle Eigenheiten ihrer Zeit wider.</p>
+
+    <p>Einige bekannte Beispiele sind:</p>
+
+    <ul>
+      <li>Die schwarze Limousine – ein Fahrzeug, das angeblich Kinder entführt.</li>
+      <li>Die Frau im Rückspiegel – eine geisterhafte Erscheinung, die plötzlich hinter einem auftaucht.</li>
+      <li>Der Anruf aus dem Haus – ein Mörder ruft an, doch der Anruf kommt aus dem selben Gebäude.</li>
+    </ul>
+
+    <h2>Die Legende vom verschwundenen Anhalter</h2>
+    <p>Die Legende vom „Verschwindenden Anhalter“ erzählt von einem nächtlichen Fahrer, der an einer verlassenen Landstraße einen hilfesuchenden Anhalter aufnimmt. Der Fremde wirkt geheimnisvoll und spricht kaum, doch bittet darum, an einen abgelegenen Ort gebracht zu werden. Während der Fahrt spürt der Fahrer eine unheimliche Kälte, und plötzlich, ohne Vorwarnung, verschwindet der Anhalter spurlos – als wäre er nie im Auto gewesen. Später stellt sich oft heraus, dass der Anhalter bereits vor Jahren an genau jener Stelle verunglückt ist. Viele glauben, es handle sich um den Geist eines verlorenen Seelenwanderers, der auf der Suche nach Erlösung durch die Dunkelheit wandert und nur von denen gesehen wird, die bereit sind, die Wahrheit hinter dem Verschwinden zu erkennen.</p>
+
+    <p>Solche Legenden faszinieren Menschen weltweit und beeinflussen auch Filme, Bücher und die Popkultur.</p>
+
+    <figure>
+      <img class="cover-image" src="straße.jpg" alt="Straße">
+      <figcaption>Die mysteriöse Straße.</figcaption>
+    </figure>
+
+    <h2>Warum Horrorfilm-Cover so faszinierend sind</h2>
+    <p>Cover von Horrorfilmen spielen eine entscheidende Rolle dabei, Spannung zu erzeugen und das Interesse des Publikums zu wecken. Sie greifen oft ikonische Szenen, Farben oder Motive auf, die sofort ein Gefühl von Unbehagen oder Neugier hervorrufen.</p>
+  </main>
+
+  <footer>
+    <p>von Sümeyye Körbulak | 2025 Horrorfilme</p>
+  </footer>
+</body>
+</html>

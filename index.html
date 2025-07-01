@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horrorfilme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #330000, #000000 70%);
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      line-height: 1.7;
+      min-height: 100vh;
+      font-size: 1.1rem;
+      text-shadow: 0 0 3px #4b0000;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 25px 0;
+      text-align: center;
+      border-bottom: 4px solid #b22222;
+    }
+
+    header h1 {
+      font-family: 'Creepster', cursive;
+      font-size: 3rem;
+      color: #b22222;
+      margin-bottom: 0;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px #4b0000;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+      text-shadow: 0 0 4px #4b0000;
+    }
+
+    nav a:hover {
+      color: #8B0000;
+      text-shadow: 0 0 12px #ff4c4c;
+    }
+
+    .warning {
+      background-color: rgba(178, 34, 34, 0.95);
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 20px #b22222;
+      letter-spacing: 1.5px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto 40px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #4b0000;
+    }
+
+    main h2, main h3 {
+      font-family: 'Creepster', cursive;
+      font-size: 2rem;
+      color: #b22222;
+      text-shadow: 2px 2px 6px #4b0000;
+      margin-top: 0;
+    }
+
+    main p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      text-shadow: 0 0 4px #330000;
+    }
+
+    main a {
+      display: inline-block;
+      background-color: #b22222;
+      color: #fff;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 8px #b22222;
+    }
+
+    main a:hover {
+      background-color: #7f1212;
+      box-shadow: 0 0 14px #ff3b3b;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #999;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      border-top: 3px solid #b22222;
+      font-size: 1rem;
+      font-weight: 500;
+      text-shadow: 0 0 4px #330000;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 0 15px;
+      }
+      main {
+        max-width: 100%;
+        padding: 25px 20px;
+        margin: 20px auto 40px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 1.15rem;
+      }
+      .warning {
+        max-width: 90%;
+        padding: 12px 20px;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0 10px;
+      }
+      header h1 {
+        font-size: 2.7rem;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 15px 0;
+      }
+      nav a {
+        margin: 0;
+        font-size: 1.1rem;
+        display: block;
+      }
+      main {
+        padding: 20px 15px;
+        margin: 15px auto 30px;
+      }
+      .warning {
+        font-size: 1.15rem;
+        padding: 10px 15px;
+      }
+      main h2, main h3 {
+        font-size: 1.7rem;
+      }
+      main p, main a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Horrorfilme</h1>
+    <nav>
+      <a href="index.html">Start</a> |
+      <a href="ueber.html">Über Horror</a> |
+      <a href="horror.html">Historische Urban Legends</a> |
+      <a href="filme.html">Filme</a>
+    </nav>
+  </header>
+
+  <div class="warning">❗Trigger-Warnung: Ab 18❗</div>
+
+  <main>
+    <h2>Willkommen in der Welt des SCHRECKENS!</h2>
+    <p>
+      Tauche ein in düstere Legenden, vergessene Flüche und geheimnisvolle Geheimnisse vergangener Zeit. <br>
+      Wage dich in die Welt des historischen Horrors – wenn du dich traust. ☠️
+    </p>
+
+    <h2>Unsere spannende Themenauswahl</h2>
+
+    <div>
+      <h3>Was ist Horror?</h3>
+      <p>Lerne, welche Zutaten einen Horrorfilm so spannend und fesselnd machen – von der Atmosphäre bis zu den unerwarteten Wendungen.</p>
+      <a href="horror.html">Über Horror</a>
+    </div>
+
+    <div>
+      <h3>Alte Mythen und urbane Legenden</h3>
+      <p>Hier erwarten dich düstere Geschichten aus der Vergangenheit – historische Legenden, die bis heute Rätsel aufgeben.</p>
+      <a href="ueber.html">Historische Urban Legends</a>
+    </div>
+
+    <div>
+      <h3>Filmempfehlungen</h3>
+      <p>Entdecke packende Horrorfilm-Empfehlungen – von zeitlosen Klassikern bis zu modernen Schockern, die dir das Blut in den Adern gefrieren lassen.</p>
+      <a href="filme.html">Filme</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>von Sümeyye Körbulak | 2025 Horrorfilme</p>
+  </footer>
+</body>
+</html>
